@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <style>
+
+    .container{
+      background-color: rgb(58, 185, 228);
+      border-bottom: 4em;
+      flex: auto;
+      justify-content: center;
+      
+    }
+   </style>  
+    
+</head>
+<body>
+  <div class="md-4 mt-4">
+  <h2 class="text-center">
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home"><h1>Klinik Kesehatan Gigi Ananda Depok</h1></a>
+      <hr>
+    </h2>
+   </div>
+
+  <div class="row md-5 mt-5">
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a href="dafbook.html">Booking</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+  <form>
+    <div class="form-group row md-4 mt-4">
+      <label for="Nama Pasien" class="col-4 md-5 mt-5 col-form-label">Nama Pasien</label> 
+      <div class="col-8 md-5 mt-5">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-address-book-o"></i>
+            </div>
+          </div> 
+          <input id="Nama Pasien" name="Nama Pasien" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4 col-form-label" for="Pilih Dokter">Pilih Dokter</label> 
+      <div class="col-8">
+        <select id="Pilih Dokter" name="Pilih Dokter" class="custom-select" required="required">
+          <option value="Drg. Amelia">Drg. Amelia</option>
+          <option value="Drg. Lulu Bintang">Drg. Lulu Bintang</option>
+          <option value="Drg. Agnes Florencia">Drg. Agnes Florencia</option>
+          <option value="Drg. Putri Anisa">Drg. Putri Anisa</option>  
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Pilih layanan" class="col-4 col-form-label">Pilih Layanan</label> 
+      <div class="col-8">
+        <select id="Pilih layanan" name="Pilih layanan" class="custom-select" required="required">
+          <option value="Penambalan gigi anak">Penambalan gigi anak</option>
+          <option value="Pencabutan gigi anak">Pencabutan gigi anak</option>
+          <option value="Pembuatan mahkota gigi anak">Pembuatan mahkota gigi anak</option>
+          <option value="Perawatan gigi anak">Perawatan gigi anak</option>
+          <option value="Pencegahan terjadinya gigi berlubang">Pencegahan terjadinya gigi berlubang</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="keluhan" class="col-4 col-form-label">Keluhan</label> 
+      <div class="col-8">
+        <textarea id="keluhan" name="keluhan" cols="40" rows="5" class="form-control" required="required"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4">Pembayaran</label> 
+      <div class="col-8">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="pembayaran" id="pembayaran_0" type="radio" class="custom-control-input" value="Cash"> 
+          <label for="pembayaran_0" class="custom-control-label">Cash</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="pembayaran" id="pembayaran_1" type="radio" class="custom-control-input" value="Transfer"> 
+          <label for="pembayaran_1" class="custom-control-label">Transfer</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="pembayaran" id="pembayaran_2" type="radio" class="custom-control-input" value="QR Code"> 
+          <label for="pembayaran_2" class="custom-control-label">QR Code</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="tanggal periksa" class="col-4 col-form-label">Tanggal Periksa</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <input id="tanggal periksa" name="tanggal periksa" type="text" class="form-control"> 
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <i class="fa fa-calendar"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="umur" class="col-4 col-form-label">Umur</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <input id="umur" name="umur" type="text" required="required" class="form-control"> 
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <i class="fa fa-address-card-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="telepon" class="col-4 col-form-label">Telepon/Hp</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-phone"></i>
+            </div>
+          </div> 
+          <input id="telepon" name="telepon" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-4 col-form-label">Email</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-envelope"></i>
+            </div>
+          </div> 
+          <input id="email" name="email" type="text" class="form-control">
+        </div>
+      </div>
+    </div> 
+    <div class="form-group row">
+      <div class="offset-4 col-9 md-4 mt-4"> 
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button> 
+      <div class="form-group row ">
+        <div class="offset col-9">
+        <button name="reset" type="reset" class="btn btn-danger mb-3 mt-3">Reset</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
